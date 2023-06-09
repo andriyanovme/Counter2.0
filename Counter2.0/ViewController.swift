@@ -7,6 +7,7 @@ import UIKit
 class ViewController: UIViewController {
     
     private var score: Int = 0
+    @IBOutlet weak var counterValueLabel: UILabel!
     @IBOutlet weak var changeButton: UIButton!
     @IBOutlet weak var countScoreLabel: UILabel!
     override func viewDidLoad() {
@@ -19,6 +20,8 @@ class ViewController: UIViewController {
         score += 1
         countScoreLabel.text = "\(score)"
     }
+    
+    
     
 }
 
